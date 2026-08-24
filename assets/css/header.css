@@ -1,0 +1,324 @@
+/*==================================================
+HEADER
+==================================================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    transition:.35s ease;
+
+}
+
+header::before,
+header::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    width:70px;
+
+    height:6px;
+
+    background:repeating-linear-gradient(135deg, var(--primary) 0 10px, transparent 10px 20px);
+
+    pointer-events:none;
+
+    z-index:2;
+
+}
+
+header::before{
+
+    left:0;
+
+}
+
+header::after{
+
+    right:0;
+
+}
+
+header.scrolled .navbar{
+
+    background:rgba(10,10,10,.92);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.35);
+
+}
+
+.navbar{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:background .3s ease;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/*=========================
+WORDMARK — TAILLE HEADER
+=========================*/
+
+.logo .wordmark{
+
+    font-size:2.5rem;
+
+}
+
+.logo .wordmark-sub{
+
+    font-size:.95rem;
+
+}
+
+.logo:hover .wordmark{
+
+    transform:skewX(-8deg) scale(1.04);
+
+}
+
+@media(max-width:480px){
+
+.logo .wordmark{
+
+    font-size:1.9rem;
+
+}
+
+.logo .wordmark-sub{
+
+    display:none;
+
+}
+
+}
+
+/*=========================
+ACTIONS (langue + discord)
+=========================*/
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.discord-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:var(--primary);
+
+    padding:12px 26px;
+
+    clip-path:polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+
+    font-weight:700;
+
+    color:white !important;
+
+    transition:.3s;
+
+}
+
+.discord-btn:hover{
+
+    background:var(--primary-light);
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================
+SÉLECTEUR DE LANGUE
+=========================*/
+
+.lang-switch{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:18px;
+
+}
+
+.lang-switch a{
+
+    opacity:.4;
+
+    transition:var(--transition);
+
+    line-height:1;
+
+}
+
+.lang-switch a:hover{
+
+    opacity:.8;
+
+}
+
+.lang-switch a.lang-current{
+
+    opacity:1;
+
+    pointer-events:none;
+
+}
+
+.lang-sep{
+
+    color:var(--border);
+
+    font-size:14px;
+
+}
+
+.lang-switch .fi{
+
+    width:24px;
+
+    height:18px;
+
+    border-radius:3px;
+
+    display:inline-block;
+
+    background-size:cover;
+
+    vertical-align:middle;
+
+}
+
+/*=========================
+TICKER (bandeau défilant, intégré au header fixe)
+=========================*/
+
+.ticker{
+
+    height:38px;
+
+    background:#000;
+
+    border-top:1px solid var(--border);
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    white-space:nowrap;
+
+}
+
+.ticker-track{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    animation:ticker-scroll 32s linear infinite;
+
+    will-change:transform;
+
+}
+
+.ticker:hover .ticker-track{
+
+    animation-play-state:paused;
+
+}
+
+.ticker-track span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    font-family:var(--title-font);
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:var(--text-light);
+
+    padding-right:60px;
+
+}
+
+.ticker-track span::after{
+
+    content:"//";
+
+    margin-left:60px;
+
+    color:var(--primary);
+
+}
+
+.ticker-track span strong{
+
+    color:var(--primary-light);
+
+}
+
+@keyframes ticker-scroll{
+
+    from{ transform:translateX(0); }
+
+    to{ transform:translateX(-50%); }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+.ticker-track{
+
+    animation:none;
+
+}
+
+}

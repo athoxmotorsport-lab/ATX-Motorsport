@@ -1,0 +1,18 @@
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeur / IDE
+.vscode/
+
+# Fichiers temporaires / sauvegardes
+*.tmp
+*.bak
+*~
+
+# Variables d'environnement (si vous en ajoutez un jour)
+.env
+
+# Dépendances (si vous ajoutez un jour npm/node pour un outil de build)
+node_modules/

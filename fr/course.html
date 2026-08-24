@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | ATX Motorsport</title>
+
+    <meta name="description"
+        content="Découvrez les championnats organisés par ATX Motorsport : Championnat GT3, Endurance et Porsche Cup sur Assetto Corsa Competizione.">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/course.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="hero-fixed">
+
+<div class="progress" id="progress"></div>
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span class="wordmark">AT<span class="wordmark-accent">X</span> <span class="wordmark-sub">Motorsport</span></span>
+        </a>
+
+        <div class="header-actions">
+
+            <div class="lang-switch">
+                <a href="course.html" class="lang-current" title="Français"><span class="fi fi-fr"></span></a>
+                <span class="lang-sep">/</span>
+                <a href="../en/course.html" title="English"><span class="fi fi-gb"></span></a>
+            </div>
+
+            <a href="https://discord.gg/Vk4SD4nhbj"
+               class="discord-btn"
+               target="_blank" rel="noopener">
+
+                Discord
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>ATX MOTORSPORT</span>
+            <span>ÉQUIPE FRANCOPHONE ACC</span>
+            <span>CHAMPIONNAT GT3 · ENDURANCE · PORSCHE CUP</span>
+            <span>14 PILOTES ENGAGÉS</span>
+            <span>REJOIGNEZ-NOUS SUR DISCORD</span>
+        </div>
+    </div>
+
+</header>
+
+<main>
+
+<!-- INTRO -->
+
+<section class="hero-banner">
+
+    <div class="container hero-banner-content">
+
+            <span class="tag">NOS COMPÉTITIONS — SAISON 1</span>
+
+            <h1>
+
+                Nos
+                <span>championnats</span>
+
+            </h1>
+
+            <p>
+
+                ATX Motorsport organise trois championnats sur Assetto Corsa Competizione, chacun avec
+                son propre format, son propre calendrier et son propre esprit. Choisissez une discipline
+                ci-dessous pour découvrir son règlement complet.
+
+            </p>
+
+    </div>
+
+</section>
+
+<div class="container layout">
+
+        <nav class="side" aria-label="Navigation">
+            <div class="nav-head">Navigation</div>
+            <a href="index.html" class="side-link"><span class="num">01</span> Accueil</a>
+            <a href="course.html" class="side-link active"><span class="num">02</span> Courses</a>
+            <a href="livrees.html" class="side-link"><span class="num">03</span> Livrées</a>
+            <a href="recrutement.html" class="side-link"><span class="num">04</span> Recrutement</a>
+            <a href="apropos.html" class="side-link"><span class="num">05</span> À propos</a>
+            <a href="partenariat.html" class="side-link"><span class="num">06</span> Partenariat</a>
+        </nav>
+
+        <div class="page-content">
+
+<!-- ONGLETS -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Choisissez votre <span>championnat</span></h2>
+
+        </div>
+
+        <div class="champ-tabs">
+
+            <button class="champ-tab active" data-target="gt3">
+                <img src="../assets/images/miniature-champ.png" alt="Championnat GT3">
+                <span>Championnat GT3</span>
+            </button>
+
+            <button class="champ-tab" data-target="endurance">
+                <img src="../assets/images/miniature-endurance.png" alt="Endurance">
+                <span>Endurance</span>
+            </button>
+
+            <button class="champ-tab" data-target="porsche">
+                <img src="../assets/images/miniature-porsche-cup.png" alt="Porsche Cup">
+                <span>Porsche Cup</span>
+            </button>
+
+        </div>
+
+        <!-- ============ CHAMPIONNAT GT3 ============ -->
+
+        <div class="champ-panel active" id="gt3">
+
+            <div class="champ-block">
+
+                <h3>Présentation</h3>
+
+                <p>
+
+                    Le Championnat GT3 ATX Motorsport est une compétition ACC francophone basée sur la
+                    régularité, le pilotage pur et la constance sur une saison longue. Chaque pilote choisit
+                    librement sa voiture parmi les modèles homologués GT3 — pas de monotype ici. L'objectif :
+                    une compétition propre, lisible et régulière, avec un rendez-vous fixe chaque week-end et
+                    un format identique à chaque manche.
+
+                </p>
+
+                <ul class="champ-list">
+
+                    <li>Catégorie GT3 libre — chaque pilote choisit sa voiture parmi les modèles homologués</li>
+                    <li>Un rendez-vous chaque week-end</li>
+                    <li>Saison longue de 12 manches + 1 finale</li>
+                    <li>Classement basé sur la régularité : les 8 meilleurs résultats sont retenus</li>
+
+                </ul>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Format de la saison</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Élément</th><th>Détail</th></tr>
+                        <tr><td>Durée</td><td>12 week-ends de course sur 12 circuits différents</td></tr>
+                        <tr><td>Fréquence</td><td>1 course par week-end</td></tr>
+                        <tr><td>Classement</td><td>Les 8 meilleurs résultats sur 12 manches retenus pour le classement final</td></tr>
+                        <tr><td>Finale</td><td>Manche supplémentaire à points doublés, réservée aux 15 premiers du championnat</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Format d'un week-end de course</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Session</th><th>Durée</th></tr>
+                        <tr><td>Essais libres</td><td>20 min</td></tr>
+                        <tr><td>Qualifications</td><td>15 min</td></tr>
+                        <tr><td>Course</td><td>60 min</td></tr>
+
+                    </table>
+
+                </div>
+
+                <p style="margin-top:14px;">Aucun format sprint : une seule course de 60 minutes par week-end, grille établie selon les qualifications.</p>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Système de points</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Position</th><th>Points par manche</th></tr>
+                        <tr><td>P1</td><td>25</td></tr>
+                        <tr><td>P2</td><td>18</td></tr>
+                        <tr><td>P3</td><td>15</td></tr>
+                        <tr><td>P4</td><td>12</td></tr>
+                        <tr><td>P5</td><td>10</td></tr>
+                        <tr><td>P6</td><td>8</td></tr>
+                        <tr><td>P7</td><td>6</td></tr>
+                        <tr><td>P8</td><td>4</td></tr>
+                        <tr><td>P9</td><td>2</td></tr>
+                        <tr><td>P10</td><td>1</td></tr>
+
+                    </table>
+
+                </div>
+
+                <p style="margin-top:14px;">Bonus meilleur tour : <strong>+1 point</strong> pour le pilote ayant réalisé le meilleur tour en course, quelle que soit sa position finale.</p>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Finale de saison</h3>
+
+                <p>Le dernier week-end de la saison est une manche spéciale à points doublés, qui clôture le championnat.</p>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Position</th><th>Points finale (doublés)</th></tr>
+                        <tr><td>P1</td><td>50</td></tr>
+                        <tr><td>P2</td><td>36</td></tr>
+                        <tr><td>P3</td><td>30</td></tr>
+                        <tr><td>P4</td><td>24</td></tr>
+                        <tr><td>P5</td><td>20</td></tr>
+                        <tr><td>P6</td><td>16</td></tr>
+                        <tr><td>P7</td><td>12</td></tr>
+                        <tr><td>P8</td><td>8</td></tr>
+                        <tr><td>P9</td><td>4</td></tr>
+                        <tr><td>P10</td><td>2</td></tr>
+
+                    </table>
+
+                </div>
+
+                <ul class="champ-list" style="margin-top:20px;">
+
+                    <li><strong>Qualifiés :</strong> les 15 premiers du classement général après les 12 manches (calculé sur les 8 meilleurs résultats)</li>
+                    <li><strong>Grille de la finale :</strong> déterminée par une séance dédiée, dans les mêmes conditions que les autres manches — aucun avantage de la saison régulière n'est reporté</li>
+                    <li><strong>Circuit de la finale :</strong> choisi par sondage sur le stream, vote des pilotes finalistes</li>
+                    <li><strong>Classement final :</strong> addition du classement des 12 manches (8 meilleurs résultats) et des points de la finale</li>
+
+                </ul>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Calendrier</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Week-end</th><th>Circuit</th></tr>
+                        <tr><td>1</td><td>Monza</td></tr>
+                        <tr><td>2</td><td>Spa-Francorchamps</td></tr>
+                        <tr><td>3</td><td>Silverstone</td></tr>
+                        <tr><td>4</td><td>Barcelona</td></tr>
+                        <tr><td>5</td><td>Nürburgring GP</td></tr>
+                        <tr><td>6</td><td>Brands Hatch</td></tr>
+                        <tr><td>7</td><td>Paul Ricard</td></tr>
+                        <tr><td>8</td><td>Misano</td></tr>
+                        <tr><td>9</td><td>Zandvoort</td></tr>
+                        <tr><td>10</td><td>Hungaroring</td></tr>
+                        <tr><td>11</td><td>Zolder</td></tr>
+                        <tr><td>12</td><td>Indianapolis (DLC)</td></tr>
+                        <tr><td>Finale (13)</td><td>Circuit choisi par sondage stream (vote des finalistes)</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Règlement sportif</h3>
+
+                <ul class="champ-list">
+
+                    <li>Respect obligatoire entre tous les pilotes, en piste comme en dehors</li>
+                    <li>Aucun comportement volontairement dangereux toléré — le <em>revenge driving</em> est strictement interdit</li>
+
+                </ul>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Infraction</th><th>Sanction</th></tr>
+                        <tr><td>1er incident grave</td><td>Avertissement officiel</td></tr>
+                        <tr><td>2e incident grave</td><td>Exclusion du championnat</td></tr>
+
+                    </table>
+
+                </div>
+
+                <p style="margin-top:14px;">La décision finale concernant la qualification d'un incident revient à l'organisation ATX Motorsport. Toute contestation peut s'appuyer sur les replays et/ou enregistrements de diffusion disponibles.</p>
+
+            </div>
+
+        </div>
+
+        <!-- ============ ENDURANCE ============ -->
+
+        <div class="champ-panel" id="endurance">
+
+            <div class="champ-block">
+
+                <h3>Présentation</h3>
+
+                <p>
+
+                    L'Endurance ATX Motorsport est une série de 5 épreuves consacrées à la catégorie GT3,
+                    disputées en équipage de 2 à 3 pilotes qui se relaient au volant selon les règles de
+                    changement de pilote en vigueur. Les courses durent de 3 à 9 heures selon le circuit.
+
+                </p>
+
+                <ul class="champ-list">
+
+                    <li>Catégorie GT3</li>
+                    <li>Équipes de 2 à 3 pilotes avec relais obligatoire</li>
+                    <li>5 épreuves de durée variable, de 3 à 9 heures</li>
+                    <li>Classement général sur l'ensemble de la saison</li>
+
+                </ul>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Format de la saison</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Élément</th><th>Détail</th></tr>
+                        <tr><td>Durée</td><td>5 épreuves, de 3 à 9 heures selon le circuit</td></tr>
+                        <tr><td>Catégorie</td><td>GT3</td></tr>
+                        <tr><td>Équipages</td><td>2 à 3 pilotes par voiture, relais en cours de course</td></tr>
+                        <tr><td>Classement</td><td>Classement général sur l'ensemble de la saison</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Règlement technique</h3>
+
+                <ul class="champ-list">
+
+                    <li><strong>Ravitaillement :</strong> arrêt(s) au stand obligatoire(s) en carburant ; le nombre d'arrêts dépend de la consommation et de la durée de l'épreuve, à la charge de chaque équipage</li>
+                    <li><strong>Pneumatiques :</strong> changement libre, non obligatoire, à la discrétion de chaque équipage</li>
+                    <li><strong>Changement de pilote :</strong> au moins un changement obligatoire en cours de course, uniquement lors d'un arrêt au stand, moteur coupé ; durée de relais maximale selon le règlement officiel FIA en vigueur</li>
+
+                </ul>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Système de points</h3>
+
+                <p>Le barème reprend la base F1 (25-18-15-12-10-8-6-4-2-1), multipliée par le nombre d'heures de l'épreuve.</p>
+
+                <h4 style="color:var(--text);margin-bottom:12px;">Épreuves de 3 heures (Monza, Watkins Glen)</h4>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Position</th><th>Points</th></tr>
+                        <tr><td>P1</td><td>75</td></tr>
+                        <tr><td>P2</td><td>54</td></tr>
+                        <tr><td>P3</td><td>45</td></tr>
+                        <tr><td>P4</td><td>36</td></tr>
+                        <tr><td>P5</td><td>30</td></tr>
+                        <tr><td>P6</td><td>24</td></tr>
+                        <tr><td>P7</td><td>18</td></tr>
+                        <tr><td>P8</td><td>12</td></tr>
+                        <tr><td>P9</td><td>6</td></tr>
+                        <tr><td>P10</td><td>3</td></tr>
+
+                    </table>
+
+                </div>
+
+                <h4 style="color:var(--text);margin:25px 0 12px;">Épreuves de 6 heures (Spa-Francorchamps, Silverstone)</h4>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Position</th><th>Points</th></tr>
+                        <tr><td>P1</td><td>150</td></tr>
+                        <tr><td>P2</td><td>108</td></tr>
+                        <tr><td>P3</td><td>90</td></tr>
+                        <tr><td>P4</td><td>72</td></tr>
+                        <tr><td>P5</td><td>60</td></tr>
+                        <tr><td>P6</td><td>48</td></tr>
+                        <tr><td>P7</td><td>36</td></tr>
+                        <tr><td>P8</td><td>24</td></tr>
+                        <tr><td>P9</td><td>12</td></tr>
+                        <tr><td>P10</td><td>6</td></tr>
+
+                    </table>
+
+                </div>
+
+                <h4 style="color:var(--text);margin:25px 0 12px;">Épreuve de 9 heures (Suzuka)</h4>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Position</th><th>Points</th></tr>
+                        <tr><td>P1</td><td>225</td></tr>
+                        <tr><td>P2</td><td>162</td></tr>
+                        <tr><td>P3</td><td>135</td></tr>
+                        <tr><td>P4</td><td>108</td></tr>
+                        <tr><td>P5</td><td>90</td></tr>
+                        <tr><td>P6</td><td>72</td></tr>
+                        <tr><td>P7</td><td>54</td></tr>
+                        <tr><td>P8</td><td>36</td></tr>
+                        <tr><td>P9</td><td>18</td></tr>
+                        <tr><td>P10</td><td>9</td></tr>
+
+                    </table>
+
+                </div>
+
+                <p style="margin-top:14px;">Classement général établi sur la position à l'arrivée de chaque épreuve, cumulée sur la saison.</p>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Calendrier</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Épreuve</th><th>Circuit</th><th>Durée</th></tr>
+                        <tr><td>1</td><td>Monza</td><td>3 heures</td></tr>
+                        <tr><td>2</td><td>Spa-Francorchamps</td><td>6 heures</td></tr>
+                        <tr><td>3</td><td>Suzuka</td><td>9 heures</td></tr>
+                        <tr><td>4</td><td>Watkins Glen</td><td>3 heures</td></tr>
+                        <tr><td>5</td><td>Silverstone</td><td>6 heures</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Règlement sportif</h3>
+
+                <ul class="champ-list">
+
+                    <li>Respect obligatoire entre tous les pilotes, en piste comme en dehors</li>
+                    <li>Aucun comportement volontairement dangereux toléré — le <em>revenge driving</em> est strictement interdit</li>
+
+                </ul>
+
+                <p style="margin-top:14px;">Tout pilote ou équipage roulant de manière volontairement dangereuse ou irrespectueuse pourra être sanctionné par l'organisation ATX Motorsport, sur la base des replays et/ou enregistrements de diffusion disponibles.</p>
+
+            </div>
+
+        </div>
+
+        <!-- ============ PORSCHE CUP ============ -->
+
+        <div class="champ-panel" id="porsche">
+
+            <div class="champ-block">
+
+                <h3>Présentation</h3>
+
+                <p>
+
+                    La Porsche Cup ATX Motorsport est une coupe monotype disputée exclusivement sur Porsche
+                    992 GT3 R : tous les pilotes roulent avec la même voiture et le même setup homologué,
+                    pour mettre en avant le pilotage pur. Chaque week-end suit un format inspiré de la
+                    Formule 1 : qualifications, course Sprint en grille inversée, puis course principale en
+                    grille qualif.
+
+                </p>
+
+                <ul class="champ-list">
+
+                    <li>Monotype — Porsche 992 GT3 R pour tous</li>
+                    <li>Setup homologué identique pour tous les pilotes</li>
+                    <li>Livrées officielles</li>
+                    <li>Format double course : Sprint (grille inversée) + Course principale (grille qualif)</li>
+                    <li>Saison courte et intense : 5 manches + 1 finale</li>
+
+                </ul>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Format de la saison</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Élément</th><th>Détail</th></tr>
+                        <tr><td>Durée</td><td>5 week-ends de course sur 5 circuits différents</td></tr>
+                        <tr><td>Finale</td><td>Manche supplémentaire à Spa-Francorchamps, réservée aux 15 premiers du championnat — points doublés</td></tr>
+                        <tr><td>Classement général</td><td>Addition du classement Sprint et du classement Course principale sur la saison</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Format d'un week-end de course</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Session</th><th>Durée</th><th>Grille de départ</th></tr>
+                        <tr><td>Qualifications</td><td>15 min</td><td>—</td></tr>
+                        <tr><td>Course Sprint</td><td>30 min</td><td>Grille inversée (résultat qualif)</td></tr>
+                        <tr><td>Pause</td><td>20 min</td><td>—</td></tr>
+                        <tr><td>Course principale</td><td>60 min</td><td>Grille qualif (ordre direct)</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Système de points</h3>
+
+                <p>Trois classements sont tenus en parallèle : Sprint, Course principale, et un classement général qui cumule les deux.</p>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Position</th><th>Points par session (Sprint et Course principale)</th></tr>
+                        <tr><td>P1</td><td>25</td></tr>
+                        <tr><td>P2</td><td>18</td></tr>
+                        <tr><td>P3</td><td>15</td></tr>
+                        <tr><td>P4</td><td>12</td></tr>
+                        <tr><td>P5</td><td>10</td></tr>
+                        <tr><td>P6</td><td>8</td></tr>
+                        <tr><td>P7</td><td>6</td></tr>
+                        <tr><td>P8</td><td>4</td></tr>
+                        <tr><td>P9</td><td>2</td></tr>
+                        <tr><td>P10</td><td>1</td></tr>
+
+                    </table>
+
+                </div>
+
+                <p style="margin-top:14px;">Bonus meilleur tour : <strong>+1 point</strong> par session (Sprint et Course principale). Classement général : addition des points Sprint + Course principale sur les 5 manches de la saison régulière.</p>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Finale de saison — Spa-Francorchamps</h3>
+
+                <p>La finale suit le même format double course que les manches régulières. Les points obtenus sont doublés.</p>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Élément</th><th>Détail</th></tr>
+                        <tr><td>Qualifiés</td><td>Les 15 premiers du classement général après les 5 manches</td></tr>
+                        <tr><td>Points</td><td>Doublés pour le Sprint et la Course principale</td></tr>
+                        <tr><td>Classement final</td><td>Addition du classement général (5 manches) + points doublés de la finale</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Calendrier</h3>
+
+                <div class="champ-table-wrap">
+
+                    <table class="champ-table">
+
+                        <tr><th>Week-end</th><th>Circuit</th></tr>
+                        <tr><td>1</td><td>Barcelona</td></tr>
+                        <tr><td>2</td><td>Misano</td></tr>
+                        <tr><td>3</td><td>Nürburgring GP</td></tr>
+                        <tr><td>4</td><td>Silverstone</td></tr>
+                        <tr><td>5</td><td>Monza</td></tr>
+                        <tr><td>Finale</td><td>Spa-Francorchamps</td></tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="champ-block">
+
+                <h3>Règlement sportif</h3>
+
+                <ul class="champ-list">
+
+                    <li>Respect obligatoire entre tous les pilotes, en piste comme en dehors</li>
+                    <li>Aucun comportement volontairement dangereux toléré — le <em>revenge driving</em> est strictement interdit</li>
+
+                </ul>
+
+                <p style="margin-top:14px;">Tout pilote roulant de manière volontairement dangereuse ou irrespectueuse sera exclu du serveur sans avertissement préalable. Les replays et enregistrements de diffusion font foi en cas de contestation.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section>
+
+    <div class="container">
+
+        <div class="cta">
+
+            <h2>Envie de courir avec nous ?</h2>
+
+            <p>Rejoignez ATX Motorsport et participez à nos championnats.</p>
+
+            <a href="recrutement.html" class="btn">
+
+                Rejoindre l'équipe
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </div>
+
+</div>
+
+</main>
+
+<footer>
+
+    <div class="container footer-container">
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+
+                <span class="wordmark">AT<span class="wordmark-accent">X</span> <span class="wordmark-sub">Motorsport</span></span>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a href="mailto:athoxmotorsport@gmail.com" title="Mail">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+                <a href="https://discord.gg/Vk4SD4nhbj" target="_blank" title="Discord">
+
+                    <i class="fa-brands fa-discord"></i>
+
+                </a>
+
+                <a href="https://www.thesimgrid.com/communities/atx-motorsport" target="_blank" title="SimGrid">
+
+                    <i class="fa-solid fa-flag-checkered"></i>
+
+                </a>
+
+                <a href="https://www.twitch.tv/a_t_h_o_x" target="_blank" title="Twitch">
+
+                    <i class="fa-brands fa-twitch"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Accueil</a>
+            <a href="course.html">Courses</a>
+            <a href="livrees.html">Livrées</a>
+            <a href="recrutement.html">Recrutement</a>
+            <a href="apropos.html">À propos</a>
+            <a href="partenariat.html">Partenariat</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 ATX Motorsport — Tous droits réservés.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
