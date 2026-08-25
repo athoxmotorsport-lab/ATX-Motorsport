@@ -916,13 +916,13 @@ CARTES STATS (bandeau sous le hero)
 
     position:absolute;
 
-    left:50%;
+    left:270px;
+
+    right:5%;
 
     bottom:36px;
 
-    transform:translateX(-50%);
-
-    width:min(95%,1400px);
+    width:auto;
 
     z-index:3;
 
@@ -962,13 +962,15 @@ CARTES STATS (bandeau sous le hero)
 
 .stat-card h3{
 
-    font-family:'Anton',sans-serif;
+    font-family:var(--text-font);
 
-    font-size:1.5rem;
+    font-weight:600;
 
-    letter-spacing:.5px;
+    font-size:1.1rem;
 
-    text-transform:uppercase;
+    letter-spacing:.2px;
+
+    text-transform:none;
 
     margin-bottom:10px;
 
@@ -991,6 +993,8 @@ CARTES STATS (bandeau sous le hero)
     transform:none;
 
     left:auto;
+
+    right:auto;
 
     bottom:auto;
 
@@ -1187,7 +1191,7 @@ body.hero-fixed main > section{
 
     position:relative;
 
-    background:rgba(5,5,5,.82);
+    background:rgba(4,4,4,.94);
 
 }
 
@@ -1227,25 +1231,41 @@ LAYOUT + NAVIGATION LATÉRALE
 
 .layout{
 
-    display:grid;
+    padding-top:60px;
 
-    grid-template-columns:220px 1fr;
-
-    gap:50px;
-
-    padding-top:70px;
+    padding-left:270px;
 
 }
 
 nav.side{
 
-    position:sticky;
+    position:fixed;
 
-    top:150px;
+    top:130px;
 
-    align-self:start;
+    left:0;
 
-    height:fit-content;
+    width:230px;
+
+    height:calc(100vh - 130px);
+
+    overflow-y:auto;
+
+    padding:26px 22px;
+
+    background:#0a0a0a;
+
+    border-right:1px solid var(--border);
+
+    box-shadow:4px 0 24px rgba(0,0,0,.4);
+
+    z-index:800;
+
+}
+
+.hero-banner{
+
+    padding-left:270px;
 
 }
 
@@ -1329,11 +1349,15 @@ nav.side a .num{
 
 .layout{
 
-    grid-template-columns:1fr;
-
-    gap:0;
-
     padding-top:20px;
+
+    padding-left:0;
+
+}
+
+.hero-banner{
+
+    padding-left:0;
 
 }
 
@@ -1343,9 +1367,17 @@ nav.side{
 
     top:0;
 
+    left:auto;
+
+    width:auto;
+
+    height:auto;
+
     display:flex;
 
     overflow-x:auto;
+
+    overflow-y:visible;
 
     gap:4px;
 
@@ -1356,6 +1388,8 @@ nav.side{
     background:rgba(9,9,9,.95);
 
     backdrop-filter:blur(10px);
+
+    border-right:none;
 
     border-bottom:1px solid var(--border);
 
@@ -1422,5 +1456,233 @@ ANIMATIONS D'APPARITION AU SCROLL
     transform:none;
 
 }
+
+}
+
+/*==================================================
+GRILLE PILOTES (page Équipe)
+==================================================*/
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+.driver-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    clip-path:polygon(18px 0, 100% 0, 100% 100%, 0 100%, 0 18px);
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.driver-card:hover{
+
+    border-color:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+.driver-card img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.driver-card .driver-body{
+
+    padding:20px;
+
+}
+
+.driver-card .driver-number{
+
+    display:inline-block;
+
+    font-family:'Anton',sans-serif;
+
+    color:var(--primary-light);
+
+    font-size:1.6rem;
+
+    line-height:1;
+
+    margin-bottom:8px;
+
+}
+
+.driver-card h3{
+
+    font-size:1.1rem;
+
+    margin-bottom:8px;
+
+}
+
+.driver-card p{
+
+    font-size:.9rem;
+
+    margin-bottom:0;
+
+}
+
+/*==================================================
+GRILLE PILOTES (page Équipe)
+==================================================*/
+
+.roster{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.driver-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    clip-path:polygon(20px 0, 100% 0, 100% 100%, 0 100%, 0 20px);
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.driver-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+}
+
+.driver-card .driver-photo{
+
+    position:relative;
+
+    aspect-ratio:4/5;
+
+    overflow:hidden;
+
+    background:#111;
+
+}
+
+.driver-card .driver-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.driver-card .driver-number{
+
+    position:absolute;
+
+    top:14px;
+
+    left:14px;
+
+    font-family:'Anton',sans-serif;
+
+    font-size:1.6rem;
+
+    color:white;
+
+    background:rgba(126,35,35,.9);
+
+    padding:4px 14px;
+
+    line-height:1.3;
+
+}
+
+.driver-card .driver-body{
+
+    padding:20px 22px 24px;
+
+}
+
+.driver-card h3{
+
+    margin-bottom:6px;
+
+    font-size:1.15rem;
+
+}
+
+.driver-card .driver-role{
+
+    display:block;
+
+    color:var(--primary-light);
+
+    font-size:.78rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.driver-card p{
+
+    font-size:.88rem;
+
+    margin-bottom:0;
+
+}
+
+.driver-card.driver-placeholder{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:280px;
+
+    border-style:dashed;
+
+    color:var(--text-light);
+
+    font-size:.85rem;
+
+    text-align:center;
+
+    padding:30px;
 
 }

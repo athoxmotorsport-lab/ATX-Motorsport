@@ -172,6 +172,8 @@ TABLEAUX
 
     overflow-x:auto;
 
+    background:rgba(10,10,10,.92);
+
     border:1px solid var(--border);
 
     border-radius:var(--radius);
